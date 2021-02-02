@@ -13,20 +13,29 @@ print(melbourne_data.describe())
 # columns
 print(melbourne_data.columns)
 
+# y-axis - price
 y = melbourne_data.Price
+
+# x-axis - list of features
 melbourne_features = ['Rooms', 'Bathroom', 'Landsize', 'Lattitude', 'Longtitude']
 X = melbourne_data[melbourne_features]
+
+# information about dataset
 print(X.describe())
+# First 5 rows
 print(X.head())
 
 
 
 # Building Your Model
-# You will use the scikit-learn library to create your models. When coding, this library is written as sklearn, as you will see in the sample code. Scikit-learn is easily the most popular library for modeling the types of data typically stored in DataFrames.
+# You will use the scikit-learn library to create your models. When coding, this library is written
+# as sklearn, as you will see in the sample code. Scikit-learn is easily the most popular library for
+# modeling the types of data typically stored in DataFrames.
 #
 # The steps to building and using a model are:
 #
-# *Define: What type of model will it be? A decision tree? Some other type of model? Some other parameters of the model type are specified too.
+# *Define: What type of model will it be? A decision tree? Some other type of model?
+# Some other parameters of the model type are specified too.
 # *Fit: Capture patterns from provided data. This is the heart of modeling.
 # *Predict: Just what it sounds like
 # *Evaluate: Determine how accurate the model's predictions are.
